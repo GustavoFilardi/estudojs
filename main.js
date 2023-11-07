@@ -3,11 +3,21 @@ import "./src/styles/generic/reset.css"
 import "./src/styles/elements/base.css";
 import "./src/styles/settings/colors.css";
 
-
-import BoardGame from "./src/objects/BoardGame/index.js";
+import BoardGame from "./src/objects/BoardGame";
+import SocoreBoard from "./src/objects/ScoreBoard";
 
 const $root = document.querySelector("#root");
-const $htmlBoardGame = BoardGame(6);
-console.log($htmlBoardGame);
 
-$root.insertAdjacentHTML("beforeend", $htmlBoardGame)
+$root.insertAdjacentHTML(
+    "beforeend",
+    `
+    ${SocoreBoard()}
+    ${BoardGame(12)}
+    `
+)
+
+
+
+
+
+

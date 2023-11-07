@@ -1,4 +1,21 @@
-body { 
-    background-color: var(--color-pomb-and-power);
 
+body { 
+    
+    background-color: var(--color-alura);
+  
+ 
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 13px;
+    font-family: "Press Start 2P", cursive;
+   
+}
+    
+.fora{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 700px;
+    padding-right: 700px;
 }

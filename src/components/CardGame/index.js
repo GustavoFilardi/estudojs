@@ -2,13 +2,11 @@
 import "./style.css";
 
 
-function CardGame(){
-    return`
-    
+function CardGame(icon = "alura-pixel", alt ="Logo da Alura"){
+    return /*html*/` 
     <article class= "card-game">
-       <img  src="imgs/alura-pixel 1.png" alt="logo da Alura">
+       <img src="imgs/${icon}.png" alt="${alt}">
     </article>
-    
     `;
 }
 export default CardGame 

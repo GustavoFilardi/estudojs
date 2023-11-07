@@ -1,0 +1,41 @@
+.player-score{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    
+    width: 80px;
+    height: 30px;
+    background:var(--color-floral-white) ;
+    border: 2px solid var(--color-fiery-rose);
+    box-sizing: border-box;
+    padding: 2px;
+   gap: 2px;
+
+}
+.player-score > .pointer{
+    background: var(--color-old-silver);
+    width: 23px;
+    height: 23px;
+    
+   
+}
+.player-score[data-points="1"] > .pointer:first-child {
+    background: var(--color-mantis);
+
+}
+.player-score[data-points="2"]{
+    flex-direction: row-reverse;
+}
+
+.player-score[data-points="2"] > .pointer:nth-child(n+2){
+    background: var(--color-mantis);    
+    
+}
+
+
+.player-score[data-points="3"] > .pointer{
+    background: var(--color-mantis);
+}
+
+
+
